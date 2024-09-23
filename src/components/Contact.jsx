@@ -56,10 +56,7 @@ const Contact = () => {
       alert('Something went wrong.')
     })
   };
-  
-  //template_ih3lhpt
-  //service_zuji0f3
-  //90XIKSYAs8LbEUG8k
+
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div

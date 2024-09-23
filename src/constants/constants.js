@@ -121,7 +121,7 @@ import {
       icon: illinois,
       certificateImg: illinoiscrt,
       iconBg: "#E6DEDD",
-      date: "sep - 2024",
+      date: "Sep - 2024",
       points: [],
     },
     {

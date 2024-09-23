@@ -200,8 +200,8 @@ import {
       ],
       image: portfolio,
       logo: personallogo,
-      source_code_link: "https://github.com/",
-      live_deploy_link: "https://github.com/",
+      source_code_link: "https://github.com/nasifswalah/Portfolio.git",
+      live_deploy_link: "https://nasifswalah.netlify.app",
     },
   ];
   

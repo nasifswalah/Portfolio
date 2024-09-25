@@ -23,6 +23,7 @@ import {
     portfolio,
     illinoiscrt,
     nsdccrt,
+    docker,
   } from "../assets";
   
   export const navLinks = [
@@ -111,6 +112,10 @@ import {
     {
       name: "GitHub",
       icon: github
+    },
+    {
+      name: "Docker",
+      icon: docker,
     },
   ];
   

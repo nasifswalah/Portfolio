@@ -18,6 +18,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import express from "./tech/express.png";
 import threejs from "./tech/threejs.svg";
+import docker from "./tech/docker.png";
 
 import illinois from "./company/illinois.png";
 import nsdc from "./company/nsdc.png";
@@ -57,4 +58,5 @@ export {
   personallogo,
   illinoiscrt,
   nsdccrt,
+  docker,
 };

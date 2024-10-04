@@ -29,6 +29,8 @@ import cleatconnect from "./cleat connect.png";
 import cleatlogo from "./Cleat logo.png";
 import portfolio from "./portfolio.png";
 import personallogo from "./personallogo.png";
+import luxolynLogo from "./luxolyn-logo.png"
+import luxolyn from "./luxolyn.png"
 
 export {
   logo,
@@ -59,4 +61,6 @@ export {
   illinoiscrt,
   nsdccrt,
   docker,
+  luxolynLogo,
+  luxolyn
 };

@@ -24,6 +24,7 @@ import {
     illinoiscrt,
     nsdccrt,
     docker,
+    luxolyn,
   } from "../assets";
   
   export const navLinks = [
@@ -180,6 +181,42 @@ import {
       logo: cleatlogo,
       source_code_link: "https://github.com/nasifswalah/cleat-connect.git",
       live_deploy_link: "https://cleat-connect.onrender.com",
+    },
+    {
+      name: "Luxolyn E-commerce",
+      description:
+        "E-commerce web app that enables users to search for products and manage their cart. Secured user authentication with JWT and Redis, and implemented role-based access control (RBAC) to restrict access for buyers and sellers.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "node",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tailwind CSS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "pink-text-gradient",
+        },
+        
+      ],
+      image: luxolyn,
+      logo: luxolynLogo,
+      source_code_link: "https://github.com/nasifswalah/Luxolyn-ecommerce.git",
+      live_deploy_link: "https://luxolyn.onrender.com",
     },
     {
       name: "Portfolio",

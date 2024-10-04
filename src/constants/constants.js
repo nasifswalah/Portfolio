@@ -25,6 +25,7 @@ import {
     nsdccrt,
     docker,
     luxolyn,
+    luxolynLogo,
   } from "../assets";
   
   export const navLinks = [

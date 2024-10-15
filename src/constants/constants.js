@@ -26,6 +26,9 @@ import {
     docker,
     luxolyn,
     luxolynLogo,
+    entri,
+    internship,
+    courseCompletion,
   } from "../assets";
   
   export const navLinks = [
@@ -122,6 +125,24 @@ import {
   ];
   
   const certifications = [
+    {
+      title: "Internship in Full Stack Web Development ( MERN Stack )",
+      company_name: "Entri Elevate",
+      icon: entri,
+      certificateImg: internship,
+      iconBg: "#E6DEDD",
+      date: "Oct - 2024",
+      points: [],
+    },
+    {
+      title: "Full Stack Web Development Course Completion",
+      company_name: "Entri Elevate",
+      icon: entri,
+      certificateImg: courseCompletion,
+      iconBg: "#E6DEDD",
+      date: "Oct - 2024",
+      points: [],
+    },
     {
       title: "Full Stack Development Certified User ( MERN Stack )",
       company_name: "Illinois Institute of Technology",

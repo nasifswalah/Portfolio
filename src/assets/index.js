@@ -24,6 +24,9 @@ import illinois from "./company/illinois.png";
 import nsdc from "./company/nsdc.png";
 import illinoiscrt from "./company/illinoiscertificate.png"
 import nsdccrt from "./company/nsdccertificate.png"
+import entri from "./company/entri-elevate.png"
+import internship from './company/internship.png'
+import courseCompletion from './company/course.png'
 
 import cleatconnect from "./cleat connect.png";
 import cleatlogo from "./Cleat logo.png";
@@ -62,5 +65,8 @@ export {
   nsdccrt,
   docker,
   luxolynLogo,
-  luxolyn
+  luxolyn,
+  entri,
+  internship,
+  courseCompletion,
 };

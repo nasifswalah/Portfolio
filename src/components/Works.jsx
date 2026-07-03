@@ -47,15 +47,6 @@ const ProjectCard = ({
 
           {!isPrivate && (
             <div className="flex gap-2">
-              {/* {github && (
-                <button
-                  onClick={() => window.open(github, "_blank")}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-black/30 transition hover:bg-black/50"
-                >
-                  <img src={github} alt="GitHub" className="h-5 w-5" />
-                </button>
-              )} */}
-
               {live && (
                 <button
                   onClick={() => window.open(live, "_blank")}
@@ -110,19 +101,6 @@ const ProjectCard = ({
           </div>
         </div>
 
-        {/* Footer */}
-        {/* <div className="mt-6 border-t border-white/10 pt-4">
-          {isPrivate ? (
-            <p className="text-xs text-amber-400">
-              🔒 Private client project — source code and live demo are not
-              publicly available.
-            </p>
-          ) : (
-            <p className="text-xs text-green-400">
-              ✓ Open source with live deployment available.
-            </p>
-          )}
-        </div> */}
       </div>
     </motion.div>
   );
@@ -142,8 +120,7 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
         >
           These projects represent my experience building scalable web, mobile,
-          and backend applications. From enterprise solutions developed for
-          international clients to personal projects, each one reflects my
+          and backend applications. From enterprise solutions developed for clients to personal projects, each one reflects my
           passion for clean architecture, performance, and solving real-world
           problems.
         </motion.p>

@@ -27,17 +27,6 @@ const ServiceCard = ({ index, title, description, skills, icon }) => {
         <p className="text-secondary text-[15px] leading-7 mb-5">
           {description}
         </p>
-
-        <div className="flex flex-wrap gap-2">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-secondary"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
       </div>
     </motion.div>
   );

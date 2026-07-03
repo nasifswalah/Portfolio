@@ -1,3 +1,4 @@
+import { Download, Mail } from "lucide-react";
 import {
   mobile,
   backend,
@@ -31,6 +32,7 @@ import {
   courseCompletion,
   tmbc,
 } from "../assets";
+import { Github, Linkedin } from "@boxicons/react";
 
 export const navLinks = [
   {
@@ -83,13 +85,23 @@ const services = [
 
 const techStacks = [
   {
-    category: "Frontend",
+    category: "Frontend & Mobile",
     technologies: [
       "React",
       "Next.js",
       "Redux Toolkit",
       "Tailwind CSS",
       "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "React Native",
+      "Expo",
+      "Zustand",
+      "TenStack Query",
+      "Framer Motion",
+      "Shadcn UI",
+      "Hero UI",
     ],
   },
   {
@@ -99,13 +111,9 @@ const techStacks = [
       "Node.js",
       "Express.js",
       "FastAPI",
-    ],
-  },
-  {
-    category: "Mobile",
-    technologies: [
-      "React Native",
-      "Expo",
+      "Socket.IO",
+      "REST APIs",
+      "Python",
     ],
   },
   {
@@ -114,24 +122,17 @@ const techStacks = [
       "PostgreSQL",
       "MongoDB",
       "Redis",
+      "TypeORM",
+      "Supabase",
     ],
   },
   {
-    category: "AI",
+    category: "Security & Authentication",
     technologies: [
-      "OpenAI",
-      "Gemini",
-      "LLMs (Learning)",
-    ],
-  },
-  {
-    category: "Tools",
-    technologies: [
-      "Docker",
-      "Git",
-      "GitHub",
-      "Firebase",
-      "Postman",
+      "JWT",
+      "Firebase Authentication",
+      "RBAC",
+      "OAuth",
     ],
   },
 ];
@@ -174,7 +175,7 @@ const journey = [
     icon: entri,
     certificateImg: courseCompletion,
     iconBg: "#E6DEDD",
-    date: "2024",
+    date: "Aug 2023 – Sep 2024",
     points: [
       "Completed an intensive Full Stack Development program focused on the MERN stack.",
       "Successfully completed the internship program.",
@@ -205,14 +206,21 @@ const projects = [
     ],
 
     technologies: [
-      "NestJS",
+      "Node.js",
+      "Express.js",
       "Next.js",
       "React Native",
+      "Tailwind CSS",
+      "TypeScript",
+      "Expo",
       "MongoDB",
       "Socket.IO",
       "Firebase",
+      "JWT",
+      "Redux Toolkit",
       "Zustand",
       "RBAC",
+      "Framer Motion",
     ],
 
     private: true,
@@ -243,9 +251,10 @@ const projects = [
       "Next.js",
       "TypeScript",
       "PostgreSQL",
-      "Redis",
+      "Tailwind CSS",
       "JWT",
-      "SMTP",
+      "Shadcn UI",
+      "Cashfree API",
     ],
 
     private: true,
@@ -269,7 +278,7 @@ const projects = [
       "REST APIs",
     ],
 
-    technologies: ["NestJS", "React Native", "PostgreSQL", "Expo", "Firebase"],
+    technologies: ["Node.js", "Next.js", "React Native", "PostgreSQL", "Expo", "Tailwind CSS", "JWT"],
 
     private: true,
   },
@@ -299,4 +308,35 @@ const projects = [
   },
 ];
 
-export { services, techStacks, journey, projects };
+const contacts = [
+  {
+    title: "Email",
+    value: "nasifswalah@gmail.com",
+    icon: Mail,
+    href: "mailto:nasifswalah@gmail.com",
+    action: "Send Email",
+  },
+  {
+    title: "LinkedIn",
+    value: "linkedin.com/in/nasifswalah",
+    icon: Linkedin,
+    href: "https://linkedin.com/in/nasifswalah",
+    action: "View Profile",
+  },
+  {
+    title: "GitHub",
+    value: "github.com/nasifswalah",
+    icon: Github,
+    href: "https://github.com/nasifswalah",
+    action: "Explore Projects",
+  },
+  {
+    title: "Resume",
+    value: "Download my latest resume",
+    icon: Download,
+    href: "/Nasif_Swalah_Resume.pdf",
+    action: "Download",
+  },
+];
+
+export { services, techStacks, journey, projects, contacts };

@@ -8,42 +8,12 @@ import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { error } from "tilt/lib/router";
 import { ArrowUpRight, Download, Mail } from "lucide-react";
-
-const contacts = [
-  {
-    title: "Email",
-    value: "nasifswalah@gmail.com",
-    icon: Mail,
-    href: "mailto:nasifswalah@gmail.com",
-    action: "Send Email",
-  },
-  {
-    title: "LinkedIn",
-    value: "linkedin.com/in/nasifswalah",
-    icon: Mail,
-    href: "https://linkedin.com/in/nasifswalah",
-    action: "View Profile",
-  },
-  {
-    title: "GitHub",
-    value: "github.com/nasifswalah",
-    icon: Mail,
-    href: "https://github.com/nasifswalah",
-    action: "Explore Projects",
-  },
-  {
-    title: "Resume",
-    value: "Download my latest resume",
-    icon: Download,
-    href: "/resume.pdf",
-    action: "Download",
-  },
-];
+import { contacts } from "../constants/constants";
 
 const ContactCard = ({ title, value, icon: Icon, href, action }) => (
   <motion.a
     href={href}
-    target={href.startsWith("http") ? "_blank" : "_self"}
+    target={"_blank"}
     rel="noopener noreferrer"
     whileHover={{ y: -4 }}
     transition={{ duration: 0.2 }}
@@ -58,67 +28,11 @@ const ContactCard = ({ title, value, icon: Icon, href, action }) => (
         <h3 className="font-semibold text-white">{title}</h3>
         <p className="text-sm text-secondary">{value}</p>
       </div>
-
-      {/* <ArrowUpRight className="h-5 w-5 text-secondary transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-white" /> */}
     </div>
-
-    {/* <p className="mt-4 text-sm font-medium text-[#915EFF]">{action}</p> */}
   </motion.a>
 );
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        "service_zuji0f3",
-        "template_ih3lhpt",
-        {
-          from_name: form.name,
-          to_name: "Nasif",
-          from_email: form.email,
-          to_email: "nasifswalah@gmail.com",
-          message: form.message,
-        },
-        "90XIKSYAs8LbEUG8k",
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-
-          console.log(error);
-
-          alert("Something went wrong.");
-        },
-      );
-  };
-
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div

@@ -28,6 +28,8 @@ import entri from "./company/entri-elevate.png"
 import internship from './company/internship.png'
 import courseCompletion from './company/course.png'
 
+import tmbc from "./company/tmbc.png";
+
 import cleatconnect from "./cleat connect.png";
 import cleatlogo from "./Cleat logo.png";
 import portfolio from "./portfolio.png";
@@ -69,4 +71,5 @@ export {
   entri,
   internship,
   courseCompletion,
+  tmbc
 };

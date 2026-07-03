@@ -7,28 +7,39 @@ import { services } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, title, description, skills, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card "
-      >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-        >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.15, 0.6)}
+      className="xs:w-[270px] w-full hover:-translate-y-2 transition-all duration-300"
+    >
+      <div className="h-full rounded-2xl border border-white/10 bg-tertiary p-7">
+        <img
+          src={icon}
+          alt={title}
+          className="w-12 h-12 object-contain mb-6 opacity-90"
+        />
+
+        <h3 className="text-white text-xl font-semibold mb-3">
+          {title}
+        </h3>
+
+        <p className="text-secondary text-[15px] leading-7 mb-5">
+          {description}
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          {skills.map((skill) => (
+            <span
+              key={skill}
+              className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-secondary"
+            >
+              {skill}
+            </span>
+          ))}
         </div>
-      </motion.div>
-    </Tilt>
+      </div>
+    </motion.div>
   );
 };
 
@@ -39,18 +50,38 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-      <motion.p
+      <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 max-w-4xl space-y-6 text-secondary text-[17px] leading-[30px]"
       >
-        Skilled MERN Stack Developer with hands-on experience in building
-        dynamic web applications using React, Node.js, Express, and MongoDB.
-        Proven ability to develop full-stack applications, manage state with
-        Redux Toolkit, and implement RESTful and GraphQL APIs. Adept at crafting
-        intuitive user interfaces and scalable back-end systems, with a
-        commitment to delivering high-quality, maintainable code.
-      </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+        <p>
+          I'm a Software Engineer passionate about designing and developing
+          scalable web and mobile applications that solve real-world problems. I
+          enjoy taking products from idea to production, focusing on clean
+          architecture, maintainable code, and seamless user experiences.
+        </p>
+
+        <p>
+          My experience spans modern TypeScript ecosystems including NestJS,
+          Next.js, React Native, Express.js, and FastAPI, where I've built
+          enterprise-grade platforms featuring real-time communication, secure
+          authentication, role-based access control, and cloud-integrated
+          services.
+        </p>
+
+        <p>
+          More recently, I've been expanding my expertise into AI-powered
+          applications and intelligent workflows while deepening my
+          understanding of system design and scalable software architecture.
+        </p>
+
+        <p>
+          I'm driven by curiosity and continuous learning, always looking for
+          better ways to build software that is performant, secure, and built to
+          scale.
+        </p>
+      </motion.div>
+      <div className="mt-20 flex flex-wrap gap-5">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

@@ -223,7 +223,9 @@ const projects = [
       "Framer Motion",
     ],
 
-    private: true,
+    live: "https://www.blockchainforimpact.in/interconnect-webpage",
+
+    private: false,
   },
 
   {

@@ -44,7 +44,7 @@ const About = () => {
         className="mt-4 max-w-4xl space-y-6 text-secondary text-[17px] leading-[30px]"
       >
         <p>
-          I'm a Software Engineer passionate about designing and developing
+          I'm a Full Stack Developer passionate about designing and developing
           scalable web and mobile applications that solve real-world problems. I
           enjoy taking products from idea to production, focusing on clean
           architecture, maintainable code, and seamless user experiences.

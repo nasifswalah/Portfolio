@@ -14,11 +14,11 @@ const ServiceCard = ({ index, title, description, skills, icon }) => {
       className="xs:w-[270px] w-full hover:-translate-y-2 transition-all duration-300"
     >
       <div className="h-full rounded-2xl border border-white/10 bg-tertiary p-7">
-        <img
+        {/* <img
           src={icon}
           alt={title}
           className="w-12 h-12 object-contain mb-6 opacity-90"
-        />
+        /> */}
 
         <h3 className="text-white text-xl font-semibold mb-3">
           {title}
